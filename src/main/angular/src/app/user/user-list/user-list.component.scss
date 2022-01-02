@@ -1,0 +1,55 @@
+.card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 300px;
+  height: fit-content;
+  min-height: 450px;
+}
+
+.button_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+
+  button {
+    width: 100px;
+  }
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+p {
+  word-wrap: break-word;
+  display: block;
+  overflow: hidden;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}

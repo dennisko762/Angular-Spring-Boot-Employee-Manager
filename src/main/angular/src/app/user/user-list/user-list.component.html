@@ -1,0 +1,31 @@
+<div class="card_container">
+  <div *ngFor="let user of users; let i = index" class="card">
+    <div class="card_body">
+      <img
+        src="../../../assets/profile-images/Avatar-Free-PNG-Image.png"
+        alt="Picture of {{ user.name }}"
+        style="width: 60%"
+      />
+      <h1>{{ user.name }}</h1>
+      <p class="title">{{ user.jobTitle }}</p>
+      <p>{{ user.email }}</p>
+      <p>{{ user.phone }}</p>
+
+      <div class="button_group">
+        <a routerLink="/edituser/{{ user.id }}"
+          ><button id="editUser" type="button" class="btn btn-primary">
+            Edit user
+          </button></a
+        >
+        <button
+          id="deleteUser"
+          type="button"
+          class="btn btn-danger"
+          (click)="deleteUser(user.id)"
+        >
+          Delete user
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
